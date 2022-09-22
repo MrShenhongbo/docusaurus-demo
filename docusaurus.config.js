@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docusaurus-lifesmart.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -37,19 +37,36 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/MrShenhongbo/docusaurus-demo/tree/main/docs',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/MrShenhongbo/docusaurus-demo/tree/main/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        gtag: {
+          trackingID: 'G-B3VT9HE8TZ',
+          anonymizeIP: true,
+        },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        sidebarPath: require.resolve('./sidebarsCommunity.js'),
+        // ……其他选项
+      },
     ],
   ],
 
@@ -71,6 +88,12 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            to: '/community/support',
+            label: 'Community',
+            position: 'left',
+            activeBaseRegex: `/community/`,
+          },
+          {
             type: 'docsVersionDropdown',
             position: 'right',
             // dropdownItemsAfter: [{to: '/versions', label: '所有版本'}],
@@ -81,7 +104,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/MrShenhongbo/docusaurus-demo',
             label: 'GitHub',
             position: 'right',
           },
@@ -125,7 +148,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/MrShenhongbo/docusaurus-demo',
               },
             ],
           },
