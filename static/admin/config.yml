@@ -8,87 +8,87 @@ media_folder: "static/img" # Media files will be stored in the repo under static
 public_folder: "/img/" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: 'docs'
-      label: 'Docs'
-      label_singular: 'Doc'
-      folder: 'docs'
-      path: '{{menu}}/{{id}}'
-      create: true
-      slug: '{{id}}'
-      identifier_field: 'title'
-      extension: 'md'
-      format: 'frontmatter'
-      editor:
-        preview: true
-      fields:
-        - { label: 'Slug', name: 'id', widget: 'string' }
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Hide Title', name: 'hide_title', widget: 'boolean', default: false }
-        - { label: 'Hide Table of Contents', name: 'hide_table_of_contents', widget: 'boolean', default: false }
-        - { label: 'Sidebar Label', name: 'sidebar_label', widget: 'string', required: false }
-        - { label: 'Keywords', name: 'keywords', widget: 'list', default: [], required: false }
-        - { label: 'Description', name: 'description', required: false }
-        - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false, required: false }
-        - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'community'
-      label: 'Community'
-      label_singular: 'Community'
-      folder: 'community'
-      path: '{{menu}}/{{id}}'
-      create: true
-      slug: '{{id}}'
-      identifier_field: 'title'
-      extension: 'md'
-      format: 'frontmatter'
-      editor:
-        preview: true
-      fields:
-        - { label: 'Slug', name: 'id', widget: 'string' }
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Hide Title', name: 'hide_title', widget: 'boolean', default: false }
-        - { label: 'Hide Table of Contents', name: 'hide_table_of_contents', widget: 'boolean', default: false }
-        - { label: 'Sidebar Label', name: 'sidebar_label', widget: 'string', required: false }
-        - { label: 'Keywords', name: 'keywords', widget: 'list', default: [], required: false }
-        - { label: 'Description', name: 'description', required: false }
-        - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false, required: false }
-        - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: blog
-    label: "blog"
-    folder: blog
-    identifier_field: title
-    extension: md
-    widget: "list"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields:
-      - { name: title, label: Title, widget: string }
-      - { name: body, label: Body, widget: markdown }
-      - { name: slug, label: Slug, widget: string }
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-      - label: "Authors"
-        name: "authors" 
-        widget: "list"
-        fields:
-          - { name: name, label: Name, widget: string }
-          - { name: title, label: Title, widget: string } 
-          - { name: url, label: URL, widget: string } 
-          - { name: image_url, label: ImageURL, widget: string }
-  - name: 'pages'
-    label: 'Pages'
-    label_singular: 'Page'
-    folder: 'src/pages'
-    path: '{{id}}'
+- name: 'docs'
+    label: 'Docs'
+    label_singular: 'Doc'
+    folder: 'docs'
+    path: '{{menu}}/{{id}}'
     create: true
     slug: '{{id}}'
     identifier_field: 'title'
-    extension: 'js'
+    extension: 'md'
     format: 'frontmatter'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Slug', name: 'id', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Hide Title', name: 'hide_title', widget: 'boolean', default: false }
+      - { label: 'Hide Table of Contents', name: 'hide_table_of_contents', widget: 'boolean', default: false }
+      - { label: 'Sidebar Label', name: 'sidebar_label', widget: 'string', required: false }
+      - { label: 'Keywords', name: 'keywords', widget: 'list', default: [], required: false }
       - { label: 'Description', name: 'description', required: false }
-      - { label: 'Body', name: 'body', widget: 'markdown' } 
+      - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false, required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+- name: 'community'
+    label: 'Community'
+    label_singular: 'Community'
+    folder: 'community'
+    path: '{{menu}}/{{id}}'
+    create: true
+    slug: '{{id}}'
+    identifier_field: 'title'
+    extension: 'md'
+    format: 'frontmatter'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Slug', name: 'id', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Hide Title', name: 'hide_title', widget: 'boolean', default: false }
+      - { label: 'Hide Table of Contents', name: 'hide_table_of_contents', widget: 'boolean', default: false }
+      - { label: 'Sidebar Label', name: 'sidebar_label', widget: 'string', required: false }
+      - { label: 'Keywords', name: 'keywords', widget: 'list', default: [], required: false }
+      - { label: 'Description', name: 'description', required: false }
+      - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false, required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+- name: blog
+  label: "blog"
+  folder: blog
+  identifier_field: title
+  extension: md
+  widget: "list"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - { name: slug, label: Slug, widget: string }
+    - label: "Tags"
+      name: "tags"
+      widget: "list"
+    - label: "Authors"
+      name: "authors" 
+      widget: "list"
+      fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string } 
+        - { name: url, label: URL, widget: string } 
+        - { name: image_url, label: ImageURL, widget: string }
+- name: 'pages'
+  label: 'Pages'
+  label_singular: 'Page'
+  folder: 'src/pages'
+  path: '{{id}}'
+  create: true
+  slug: '{{id}}'
+  identifier_field: 'title'
+  extension: 'js'
+  format: 'frontmatter'
+  editor:
+    preview: false
+  fields:
+    - { label: 'Slug', name: 'id', widget: 'string' }
+    - { label: 'Title', name: 'title', widget: 'string' }
+    - { label: 'Description', name: 'description', required: false }
+    - { label: 'Body', name: 'body', widget: 'markdown' } 
