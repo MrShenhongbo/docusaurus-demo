@@ -279,5 +279,17 @@
   "theme.tags.tagsPageTitle": {
     "message": "태그",
     "description": "The title of the tag list page"
+  },
+  "homepage.content.title": {
+    "message": "내 사이트",
+    "description": "homepage content title"
+  },
+  "homepage.content.tagline": {
+    "message": "Dinosaurs 시원한",
+    "description": "homepage content tagline"
+  },
+  "homepage.content.tutorial": {
+    "message": "Docusaurus 튜토리얼 - 5분 ⏱️",
+    "description": "homepage content tutorial"
   }
 }

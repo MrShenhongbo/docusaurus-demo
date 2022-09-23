@@ -279,5 +279,17 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "homepage.content.title": {
+    "message": "我的网站",
+    "description": "homepage content title"
+  },
+  "homepage.content.tagline": {
+    "message": "Dinosaurs 很酷",
+    "description": "homepage content tagline"
+  },
+  "homepage.content.tutorial": {
+    "message": "Docusaurus 教程 - 5 分钟 ⏱️",
+    "description": "homepage content tutorial"
   }
 }
