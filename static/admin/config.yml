@@ -3,9 +3,13 @@ backend:
   branch: main 
   repo: MrShenhongbo/docusaurus-demo
 
+publish_mode: editorial_workflow
+
 # These lines should *not* be indented
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img/" # The src attribute for uploaded media will begin with /images/uploads
+
+site_url: https://docusaurus-lifesmart.netlify.app/
 
 collections:
 - name: 'docs'
@@ -45,10 +49,6 @@ collections:
   fields:
     - { label: 'Slug', name: 'id', widget: 'string' }
     - { label: 'Title', name: 'title', widget: 'string' }
-    - { label: 'Hide Title', name: 'hide_title', widget: 'boolean', default: false }
-    - { label: 'Hide Table of Contents', name: 'hide_table_of_contents', widget: 'boolean', default: false }
-    - { label: 'Sidebar Label', name: 'sidebar_label', widget: 'string', required: false }
-    - { label: 'Keywords', name: 'keywords', widget: 'list', default: [], required: false }
     - { label: 'Description', name: 'description', required: false }
     - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false, required: false }
     - { label: 'Body', name: 'body', widget: 'markdown' }
