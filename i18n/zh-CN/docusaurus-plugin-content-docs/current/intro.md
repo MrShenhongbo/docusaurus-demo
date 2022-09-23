@@ -2,46 +2,47 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro [Editing]
+# 教程介绍
 
-Let's discover **Docusaurus in less than 5 minutes**.
+让我们在 **不到 5 分钟的时间内** 了解 Docusaurus。
 
-## Getting Started
+## 入门
 
-Get started by **creating a new site**.
+通过 **创建一个新站点** 开始。
 
 Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+或者使用 **[docusaurus.new](https://docusaurus.new)** 立即尝试 **Docusaurus**
 
-### What you'll need
+### 你需要什么
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- [Node.js](https://nodejs.org/en/download/) 16.14 或更高版本：
+  - 安装 Node.js 时，建议勾选所有依赖相关的复选框。
 
-## Generate a new site
+## 生成新站点
 
-Generate a new Docusaurus site using the **classic template**.
+使用 **classic 模板** 生成新的 Docusaurus 站点。
 
-The classic template will automatically be added to your project after you run the command:
+运行命令后，**classic 模板** 将自动添加到您的项目中：
 
 ```bash
 npm init docusaurus@latest my-website classic
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+您可以将此命令键入 Command Prompt、Powershell、Terminal 或代码编辑器的任何其他集成终端。
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+该命令还会安装运行 Docusaurus 所需的所有必要依赖项。
 
-## Start your site
+## 启动您的网站
 
-Run the development server:
+运行开发服务器：
 
 ```bash
 cd my-website
 npm run start
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+该 `cd` 命令更改您正在使用的目录。为了使用您新创建的 Docusaurus 站点，您需要在那里导航终端。
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+该 `npm run start` 命令在本地构建您的网站并通过开发服务器提供服务，您可以在 http://localhost:3000/ 上查看。
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+打开 `docs/intro.md`（此页面）并编辑一些行：站点会 **自动重新加载** 并显示您的更改。

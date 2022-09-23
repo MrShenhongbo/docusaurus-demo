@@ -2,38 +2,38 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro [Editing]
+# 튜토리얼 소개
 
-Let's discover **Docusaurus in less than 5 minutes**.
+5분 안에 도쿠사우루스를 발견합시다.
 
-## Getting Started
+## 시작하기
 
-Get started by **creating a new site**.
+**새 사이트 만들기** 로 시작하세요.
 
 Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-### What you'll need
+### 필요한 것
 
 - [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+  - Node.js를 설치할 때 종속성과 관련된 모든 확인란을 선택하는 것이 좋습니다.
 
-## Generate a new site
+## 새 사이트 생성
 
-Generate a new Docusaurus site using the **classic template**.
+**classic 템플릿**을 사용하여 새 Docusaurus 사이트를 생성합니다.
 
-The classic template will automatically be added to your project after you run the command:
+다음 명령을 실행하면 클래식 템플릿이 프로젝트에 자동으로 추가됩니다.
 
 ```bash
 npm init docusaurus@latest my-website classic
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+명령 프롬프트, Powershell, 터미널 또는 코드 편집기의 기타 통합 터미널에 이 명령을 입력할 수 있습니다.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+이 명령은 또한 Docusaurus를 실행하는 데 필요한 모든 종속성을 설치합니다.
 
-## Start your site
+## 사이트 시작
 
-Run the development server:
+개발 서버를 실행합니다.
 
 ```bash
 cd my-website
