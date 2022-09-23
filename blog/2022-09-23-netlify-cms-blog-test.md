@@ -7,6 +7,6 @@ authors:
   - name: Shen Hongbo
     title: boy
     url: https://github.com/MrShenhongbo
-    imageUrl: https://github.com/MrShenhongbo.png
+    image_url: https://github.com/MrShenhongbo.png
 ---
 H﻿ello, World!
