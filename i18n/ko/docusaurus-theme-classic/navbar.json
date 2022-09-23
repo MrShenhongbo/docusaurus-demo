@@ -1,15 +1,19 @@
 {
   "title": {
-    "message": "My Site",
+    "message": "내 사이트",
     "description": "The title in the navbar"
   },
   "item.label.Tutorial": {
-    "message": "Tutorial",
+    "message": "지도 시간",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "블로그",
     "description": "Navbar item with label Blog"
+  },
+  "item.label.Community": {
+    "message": "지역 사회",
+    "description": "Navbar item with label Community"
   },
   "item.label.GitHub": {
     "message": "GitHub",
